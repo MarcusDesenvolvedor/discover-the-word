@@ -12,17 +12,13 @@ import { RouterModule } from "@angular/router";
 	imports: [RouterModule.forRoot([
     {
       path: '',
-      redirectTo: 'initial/menu',
+      redirectTo: 'play/game',
       pathMatch: 'full'
     },
 		{
 			path: 'play',
 			loadChildren: () => import('./game/private/game.module').then(m => m.GameModule)
-		},
-    {
-      path: 'initial',
-      loadChildren: () => import('./menu-app/private/menu-app.module').then(m => m.MenuAppModule)
-    }
+		}
 	])],
 	exports: [RouterModule]
 })

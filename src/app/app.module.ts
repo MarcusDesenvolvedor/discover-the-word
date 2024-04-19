@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { GameModule } from './game/private/game.module';
-import { MenuAppModule } from './menu-app/private/menu-app.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +20,6 @@ import { MenuAppModule } from './menu-app/private/menu-app.module';
     HttpClientModule,
     AppRoutingModule,
     GameModule,
-    MenuAppModule,
     RouterModule.forRoot([]),
   ],
   providers: [
